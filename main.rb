@@ -1,4 +1,7 @@
 horarios = File.open("test.txt", "r")
+tablaHorarios = File.open("horariosProveedores.csv", "a+")
+
+tablaHorarios.puts("fkEstetica dia horaAbre horaCierra")
 
 horarios.each do |horario|
   salon = horario.split(",")[0]
