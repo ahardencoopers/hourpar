@@ -17,3 +17,15 @@ def diferenciaDias(diaInf, diaSup)
 
   return (diaSup - diaInf) + 1
 end
+
+def nombreDia(numero)
+  dia = "Lunes" if numero == 1
+  dia = "Martes" if numero == 2 
+  dia = "Miercoles" if numero == 3
+  dia = "Jueves" if numero == 4
+  dia = "Viernes" if numero == 5 
+  dia = "Sabado" if numero == 6
+  dia = "Domingo" if numero == 7
+
+  return dia
+end
