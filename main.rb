@@ -12,16 +12,16 @@ horarios.each do |horario|
 
   diaInf = rangoHorario.split[0]
   diaSup = rangoHorario.split[1]
-  horaAbre = rangoHorario.split[2]
-  horaCierra = rangoHorario.split[3]
+  horaAbre = "#{rangoHorario.split[2]}:00"
+  horaCierra = "#{rangoHorario.split[3]}:00"
   diferenciaDias(diaInf, diaSup).times do |i|
     diaActual = nombreDia(i+1)
     tablaHorarios.puts("#{salon},#{diaActual},#{horaAbre},#{horaCierra}")
   end
   rangoExtra.length.times do |i|
     diaActual = rangoExtra[i].split[0]
-    horaAbre = rangoExtra[i].split[1]
-    horaCierra = rangoExtra[i].split[2]
+    horaAbre = "#{rangoExtra[i].split[1]}:00"
+    horaCierra = "#{rangoExtra[i].split[2]}:00"
     tablaHorarios.puts("#{salon},#{diaActual},#{horaAbre},#{horaCierra}")
   end
 end
