@@ -12,6 +12,7 @@ horarios.each do |horario|
   diaInf = rangoHorario.split[0]
   diaSup = rangoHorario.split[1]
   diferenciaDias(diaInf, diaSup)
+  puts diferenciaDias(diaInf, diaSup)
 end
 
 horarios.close

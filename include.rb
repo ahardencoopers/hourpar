@@ -15,6 +15,5 @@ def diferenciaDias(diaInf, diaSup)
   diaSup = 6 if diaSup == "Sabado"
   diaSup = 7 if diaSup == "Domingo"
 
-  puts diaInf 
-  puts diaSup
+  return (diaSup - diaInf) + 1
 end
